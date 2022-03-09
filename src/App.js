@@ -40,14 +40,3 @@ const App = () => {
 };
 
 export default App;
-
-/*
-{"_id":"5eTiZJCTAy9B",
-"tags":["famous-quotes"],
-"content":"Whoso loves, believes the impossible.",
-"author":"Elizabeth Browning",
-"authorSlug":"elizabeth-browning",
-"length":37,
-"dateAdded":"2021-01-11",
-"dateModified":"2021-01-11"}
-*/
