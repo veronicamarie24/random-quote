@@ -4,9 +4,8 @@ import "@fontsource/roboto/300.css";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-const quotesApi = "https://api.quotable.io/random";
-
 const App = () => {
+  const quotesApi = "https://api.quotable.io/random";
   const [quote, setQuote] = useState([]);
 
   //Fetch quote from API
@@ -18,7 +17,9 @@ const App = () => {
 
   useEffect(() => {
     getQuote();
-  }, []);
+  }, [quotesApi]);
+  // we don't want to leave the dependency array empty
+  // it could make debugging more difficult
 
   console.log(quote);
   const { content, author } = quote;
